@@ -178,7 +178,11 @@ Please refer to the detailed installation instructions provided in the the READM
   <p>.</p>
 </div>
 
-
+## FUTURE IMPLEMENTATION
+1. Implementing dynamic obstacle avoidance.
+2. Enhance mapping of rough terrain.
+3. Changing the existing control system of the bots
+4. Using the concept of reinforcement learning.
 
 
 <!-- CONTRIBUTING -->
@@ -216,14 +220,7 @@ Don't forget to give the project a star! Thanks again!
 [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Tejallll)
 [![](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:me210003078@iiti.ac.in)
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
