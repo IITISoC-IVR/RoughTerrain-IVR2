@@ -172,6 +172,12 @@ Please refer to the detailed installation instructions provided in the the READM
 - [x] WayPoint Navigation using Simulink Model.
 - [x] Visualisation of pointcloud2 data from Velodyne LiDAR.
 
+## RQT GRAPH
+<div style="display: flex; align-items: center;">
+  <img src="./rosgraph.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+
 
 
 
