@@ -27,7 +27,7 @@ Following are the steps taken for running this project -
 1. Below is the environment suitable for the application - :
 
 <div style="display: flex; align-items: center;">
-  <img src="./hex.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
+  <img src="./worldgh.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
   <p>.</p>
 </div>
 
@@ -37,17 +37,18 @@ Following are the steps taken for running this project -
   
 3. Generate a pgm file through slam mapping of this environment.
 
-<div style="display: flex; align-items: center;">
-  <img src="./shapes.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
-  <p>.</p>
-</div>
+
 
 4. Once the pgm file or occupancyMap is available, use a matlab mlx script of the planner that we want to test (A*, RRT planner, RRT* planner, Hybride A*) to generate a path using particular algorithm.
 <div style="display: flex; align-items: center;">
-  <img src="./shapes.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
+  <img src="./hex.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
   <p>.</p>
 </div>
 
+<div style="display: flex; align-items: center;">
+  <img src="./shapes.jpeg" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
 
 
 5. Once the waypoints were created, the final point was designated as the goal of the trajectory. This goal point needed to be converted back into Gazebo coordinates. To achieve this, the mathworks path following with obstacle avoidance slx file was employed. This file took the goal point as input and generated the corresponding velocity upon connection with the Gazebo simulation. To establish a connection with the Turtlebot in the Gazebo environment, the command "rosinit" was initialized in the command line of Matlab, which set up the ROS master connection.
