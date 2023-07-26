@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="fake_depth" default="false" />
+    <arg name="fake_gps" default="false" />
+
+    <rosparam command="load" file="$(find curiosity_mars_rover_control)/config/control_joint_state.yaml" />
+    <rosparam command="load" file="$(find curiosity_mars_rover_control)/config/control_ackermann_drive.yaml" />
+
+    <group if="$(arg fake_gps)">
+        <param name="curiosity_mars_rover/ackermann_drive_controller/enable_odom_tf" value="false" />
+        <node name="curiosity_rover_fake_gps_node" pkg="curiosity_mars_rover_control" type="gps_publish.py" respawn="false" output="screen" args=""/>
+    </group>
+
+    <node name="controller_manager" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="--namespace=/curiosity_mars_rover
+                                ackermann_drive_controller
+                                joint_state_controller
+                                suspension_arm_F_L_joint_position_controller
+                                suspension_arm_B_L_joint_position_controller
+                                suspension_arm_B2_L_joint_position_controller
+                                suspension_arm_F_R_joint_position_controller
+                                suspension_arm_B_R_joint_position_controller
+                                suspension_arm_B2_R_joint_position_controller
+                                mast_p_joint_position_controller
+                                mast_02_joint_position_controller
+                                mast_cameras_joint_position_controller
+                                arm_01_joint_position_controller
+                                arm_02_joint_position_controller
+                                arm_03_joint_position_controller
+                                arm_04_joint_position_controller
+                                arm_tools_joint_position_controller">
+    </node>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+        <param name="publish_frequency" type="double" value="50" />
+        <remap from="/joint_states" to="/curiosity_mars_rover/joint_states" />
+    </node>
+
+    <node name="curiosity_rover_arm_and_mast_node" pkg="curiosity_mars_rover_control" type="arm_and_mast.py" respawn="false" output="screen" args=""/>
+</launch>

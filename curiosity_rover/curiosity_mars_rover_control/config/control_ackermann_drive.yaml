@@ -1,0 +1,64 @@
+# Configuration for the ackermann drive controller
+curiosity_mars_rover:
+  ackermann_drive_controller:
+    type: "ackermann_drive_controller/AckermannDriveController"
+
+    # Odometry related
+    publish_rate: 50
+    open_loop: false
+
+    # Wheel joints
+    front_left_wheel: "front_wheel_L_joint"
+    front_right_wheel: "front_wheel_R_joint"
+    mid_left_wheel: "middle_wheel_L_joint"
+    mid_right_wheel: "middle_wheel_R_joint"
+    back_left_wheel: "back_wheel_L_joint"
+    back_right_wheel: "back_wheel_R_joint"
+
+    # Steering joints
+    front_left_steer: "suspension_steer_F_L_joint"
+    front_right_steer: "suspension_steer_F_R_joint"
+    back_left_steer: "suspension_steer_B_L_joint"
+    back_right_steer: "suspension_steer_B_R_joint"
+
+    # Geometry (in metres)
+    wheel_radius: 0.25
+    mid_wheel_lat_separation: 2.36
+    front_wheel_lat_separation: 2.10
+    front_wheel_lon_separation: 1.17
+    back_wheel_lat_separation: 2.10
+    back_wheel_lon_separation: 1.07
+
+    # Odometry covariances
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.03]
+
+    # Top level frame (link) of the rover
+    base_frame_id: "base_link"
+
+    # Whether to publish odometry data from the wheel speeds.
+    enable_odom_tf: true # Disabled automatically if fake_gps is enabled.
+    odom_frame_id: "/odom"
+
+    # Set to false if the motor driver provides velocity data.
+    estimate_velocity_from_position: true
+
+    # Publishing movement instructions
+    publish_cmd: true
+    allow_multiple_cmd_vel_publishers: true # Enabled so that teleoperation can override autonomous navigation
+
+    # Velocity and acceleration limits for the robot
+    # Technically these should be 100x smaller (~0.05 m/s is the actual Curiosity limit)
+    # For the sake of convenience and demonstrating functionality, they have been sped up
+    linear:
+      x:
+        has_velocity_limits: true
+        max_velocity: 5.0 # m/s
+        has_acceleration_limits: true
+        max_acceleration: 5.0 # m/s^2
+    angular:
+      z:
+        has_velocity_limits: true
+        max_velocity: 5.0 # rad/s
+        has_acceleration_limits: true
+        max_acceleration: 5.0 # rad/s^2
