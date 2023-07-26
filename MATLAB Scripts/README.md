@@ -22,17 +22,26 @@ This project involves using Mathworks softwares for implementing a robust and ef
 
 ## Co-simulation of ROS-MATLAB :
 ROS MATLAB co-simulation enables seamless integration between MATLAB and ROS (Robot Operating System), facilitating real-time data exchange, control, and visualization, making it a powerful combination for developing and testing complex robotic systems and algorithms.
-![environment](https://github.com/Autonomousanz/Autonomous-Navigation-in-Rough-Terrain/blob/master/Pictures/rosinit.png)
+<div style="display: flex; align-items: center;">
+  <img src="./rosinit.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
 1. To perform Co-simulation, type in the IP address of the Linux system where you plan on running the Gazebo simulation files.<br>
 2. If there are no errors in connection, the script proceeds to completion.<br>
 
 ## Visualisation :
 MATLAB was used to receive sensor data from the Gazebo bot. This data was later visualised to enhance understanding.<br>
 *2D Lidar*
-![environment](https://github.com/Autonomousanz/Autonomous-Navigation-in-Rough-Terrain/blob/master/Pictures/rosinit.png)
+<div style="display: flex; align-items: center;">
+  <img src="./laserscan.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
 
 *3D Lidar*
-![environment](https://github.com/Autonomousanz/Autonomous-Navigation-in-Rough-Terrain/blob/master/Pictures/rosinit.png)
+<div style="display: flex; align-items: center;">
+  <img src="./.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
 
 ## Global Path Planners :
 After thorough experimentation with various path planners, including RRT, RRT*, A*, and Hybrid A*, we present the results of our tests.<br>
