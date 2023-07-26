@@ -56,3 +56,24 @@ git clone https://github.com/clearpathrobotics/cpr_gazebo.git
 </div>
 
 ## Visualisation
+1. Depth Camera
+   <div style="display: flex; align-items: center;">
+  <img src="./depthcam.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+3. Stereo Camera
+<div style="display: flex; align-items: center;">
+  <img src="./octomap.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+4. 3D Lidar - Velodyne
+<div style="display: flex; align-items: center;">
+  <img src="./velodyne.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+
+## Steps to save octomap
+```
+roslaunch octomap_server octomap_mapping.launch
+rosrun octomap_server octomap_saver my_octomap.bt
+```
