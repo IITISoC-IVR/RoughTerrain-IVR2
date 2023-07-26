@@ -97,6 +97,22 @@ Contributors :
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Robots Descrption:
+Our experimentation involved utilizing three distinct robots, each deployed in different environments, to thoroughly test the effectiveness of our algorithms. Each robot was equipped with specific sensors, enabling them to navigate and interact with their respective environments efficiently. Below, we provide a description of each robot, along with the sensors they were equipped with:
+
+1. **JACKAL**:
+   - Environment: [Specify Environment Name]
+   - Sensors: [List of sensors on Robot A]
+
+2. **Curiosity Mars Rover**:
+   - Environment: [Specify Environment Name]
+   - Sensors: [List of sensors on Robot B]
+
+3. **Turtlebot3**:
+   - Environment: [Specify Environment Name]
+   - Sensors: [List of sensors on Robot C]
+
+By using a diverse set of robots and environments, we aimed to thoroughly assess the capabilities and limitations of our algorithms, ensuring robustness and adaptability in real-world scenarios. The data collected from these experiments provided valuable insights and helped us refine and optimize our algorithms for better performance and broader applicability.
 
 
 <!-- GETTING STARTED -->
