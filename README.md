@@ -174,7 +174,7 @@ Please refer to the detailed installation instructions provided in the the READM
 
 ## RQT GRAPH
 <div style="display: flex; align-items: center;">
-  <img src="./rosgraph.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <img src="./rosgraph.png" alt="Jackal Robot" width="1000" length="1000" style="float: centre; margin-right: 20px;">
   <p>.</p>
 </div>
 
