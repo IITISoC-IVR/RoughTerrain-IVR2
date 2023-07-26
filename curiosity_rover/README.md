@@ -4,7 +4,10 @@ https://github.com/Autonomousanz/Autonomous-Navigation-in-Rough-Terrain.git
 ![](https://i.imgur.com/sSvI0MY.png)
 ## Description :
 The project is an experiment of finding the shortest path to a given set of start and end points namely waypoints using various Path planning algorithms in a rough terrain and then deploying these waypoints on the cu robot. Mainly the tools used were MATLAB for generating the waypoints using a map of the given environment in pgm file and then converting it into occupancyMap or binaryoccupancyMap, further feeding this shortest path to a robot in Gazebo ROS simulation using the Simulink model.
-
+<div style="display: flex; align-items: center;">
+  <img src="./mars.jpeg" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
 
 ## Installation and Set-Up :
 We expanded upon an existing simulation of NASA’s Curiosity rover made for ROS (Robot Operating System) and Gazebo. And enhanced the accuracy of the virtual rover by adding more sensors to Rover.
@@ -20,4 +23,15 @@ The folder, `curiosity_mars_rover_ws`, is a Catkin workspace. The `src/` folder 
 
 You will be able to run 'roslaunch' commands, for example:
 `roslaunch curiosity_mars_rover_gazebo main_mars_terrain.launch`
-![Screenshot of RViz](Rvizss.png)
+<div style="display: flex; align-items: center;">
+  <img src="./rover3.jpeg" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="./rover1.jpeg" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="./rover2.jpeg" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
