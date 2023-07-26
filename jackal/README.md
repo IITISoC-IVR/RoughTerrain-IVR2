@@ -38,3 +38,21 @@ git clone https://github.com/clearpathrobotics/cpr_gazebo.git
 
 ## Sensor Mounting
  Refer to the following link to access various sensors - [Sensors](https://www.clearpathrobotics.com/assets/guides/melodic/jackal/description.html)
+ <div style="display: flex; align-items: center;">
+  <img src="./1.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="./2.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="./3.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+<div style="display: flex; align-items: center;">
+  <img src="./4.png" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
+</div>
+
+## Visualisation
