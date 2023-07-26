@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <param name="enable_statistics" value="true" />
+    <arg name="fake_depth" default="false" />
+    <arg name="fake_gps" default="false" />
+    <arg name="simple_camera" default="false" />
+    <arg name="rviz" default="true"/>
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    <arg name="world" default="$(find curiosity_mars_rover_gazebo)/worlds/flat.world"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="debug" value="$(arg debug)" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+        <arg name="headless" value="$(arg headless)"/>
+    </include>
+
+    <include file="$(find curiosity_mars_rover_description)/launch/curiosity_mars_rover_spawn.launch">
+        <arg name="fake_depth" value="$(arg fake_depth)" />
+        <arg name="simple_camera" default="$(arg simple_camera)" />
+    </include>
+    <include file="$(find curiosity_mars_rover_control)/launch/curiosity_mars_rover_control.launch">
+        <arg name="fake_depth" value="$(arg fake_depth)" />
+        <arg name="fake_gps" value="$(arg fake_gps)" />
+    </include>
+    
+    <group if="$(arg rviz)">
+        <include file="$(find curiosity_mars_rover_viz)/launch/rviz.launch">
+            <arg name="fake_depth" value="$(arg fake_depth)" />
+            <arg name="simple_camera" default="$(arg simple_camera)" />
+        </include>
+    </group>
+</launch>
