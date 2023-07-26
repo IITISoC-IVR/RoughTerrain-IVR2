@@ -101,52 +101,34 @@ Contributors :
 Our experimentation involved utilizing three distinct robots, each deployed in different environments, to thoroughly test the effectiveness of our algorithms. Each robot was equipped with specific sensors, enabling them to navigate and interact with their respective environments efficiently. Below, we provide a description of each robot, along with the sensors they were equipped with:
 
 1. **JACKAL**:
-   - Environment: [Specify Environment Name]
-   - Sensors: [List of sensors on Robot A]
+   - Environment: Office World, Inspection World
+   - Sensors:
+      1. Sick LMS1xx - 2D Laser Scanner
+      2. Velodyne VLP-16 - 3D Laser Scanner
+      3. Hokuyo UST-10 lidar - front accessory fender
+      4. NovAtel satellite navigation receiver
+      5. Pointgrey Flea3 camera
+      6. Pointgrey Bumblebee2 camera
+      7. realsense2_camera
 
 2. **Curiosity Mars Rover**:
-   - Environment: [Specify Environment Name]
-   - Sensors: [List of sensors on Robot B]
+   - Environment: Rough Mars terrain world, Flat Shapes world
+   - Sensors:
+      1.
 
-3. **Turtlebot3**:
-   - Environment: [Specify Environment Name]
-   - Sensors: [List of sensors on Robot C]
+3. **Turtlebot3 Waffle**:
+   - Environment: 
+   - Sensors:
+      1. 
 
 By using a diverse set of robots and environments, we aimed to thoroughly assess the capabilities and limitations of our algorithms, ensuring robustness and adaptability in real-world scenarios. The data collected from these experiments provided valuable insights and helped us refine and optimize our algorithms for better performance and broader applicability.
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
+For optimal performance, we recommend using two separate systems: one with a Linux OS for installing ROS1 and Gazebo for robotics aspects, and another with Windows OS for MATLAB and its toolboxes. Running all these resource-intensive software on one system may lead to performance issues.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Please refer to the detailed installation instructions provided in the the README files of each folder of our repository to install all the required dependencies and softwares. Follow the instructions carefully to set up each component accordingly.
 
 
 <!-- USAGE EXAMPLES -->
