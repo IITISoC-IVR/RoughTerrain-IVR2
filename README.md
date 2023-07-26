@@ -23,35 +23,22 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-![Jackal Robot](./images/jackal_robot.jpg)
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-![Prius Image](https://devdiscourse.blob.core.windows.net/devnews/25_07_2022_21_23_03_3131741.jpg)
-<h3 align="center">project_title</h3>
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
+<div style="display: flex; align-items: center;">
+  <img src="./jackal.jpeg" alt="Jackal Robot" width="500" style="float: centre; margin-right: 20px;">
+  <p>.</p>
 </div>
+
+
+
+
+
+
+
 
 
 
@@ -86,13 +73,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Welcome to the ROS-MATLAB project on Rough Terrain Navigation! In this project, we demonstrate how to achieve robust and efficient navigation for mobile robots in challenging terrains using MATLAB toolboxes and co-simulation with Gazebo. Navigating rough terrains is challenging due to uneven surfaces and obstacles. Autonomous systems use advanced algorithms and sensor data to adapt, plan optimised routes, and avoid hazards, making rough terrain navigation easier and more efficient. Jackal, TurtleBot, and Curiosity Mars Rover are the bots utilised for testing. Among them, the Jackal bot exhibited the best results.
 
-Automating a vehicle for off-road conditions poses different sets of challenges when compared to those tackled for on-road autonomous cars. The lack of road rules and lane structure presents the vehicle with unknown challenges it needs to deal with reactively. Various industries (Agriculture, Construction, Mining, Planetary exploration) are looking to automate tasks where humans are involved, especially in mundane tasks (alt: repetitive actions) and in some cases hazardous operational situations. A lot of these applications require a human driver to move the vehicle to accomplish the tasks. Automation of this motion can help free up humans for more sophisticated jobs and move them away from harm's way. It can also help with faster scaling and quick deployments to newer areas.
+Contributors :  
+- [Abhishek Nair](https://github.com/NairAbhishek1403)
+- [Aditya Suwalka](https://github.com/git-suwalkaaditya)
+- [Tejal Uplenchwar](https://github.com/Tejallll)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 * ![Windows Badge](https://img.shields.io/badge/Windows-OS-blue?style=for-the-badge&logo=windows&logoColor=white)
