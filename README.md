@@ -114,12 +114,16 @@ Our experimentation involved utilizing three distinct robots, each deployed in d
 2. **Curiosity Mars Rover**:
    - Environment: Rough Mars terrain world, Flat Shapes world
    - Sensors:
-      1.
+      1. Mast Camera
+      2. RearHaz Camera
+      3. FrontHaz Camera
+      4. Nav Camera
+      5. IMU
 
 3. **Turtlebot3 Waffle**:
-   - Environment: 
+   - Environment: office world, turtlebot3_world
    - Sensors:
-      1. 
+      1. 360 LiDAR
 
 By using a diverse set of robots and environments, we aimed to thoroughly assess the capabilities and limitations of our algorithms, ensuring robustness and adaptability in real-world scenarios. The data collected from these experiments provided valuable insights and helped us refine and optimize our algorithms for better performance and broader applicability.
 
@@ -133,9 +137,27 @@ Please refer to the detailed installation instructions provided in the the READM
 
 <!-- USAGE EXAMPLES -->
 ## Demo and Usage:
- ![Runtime](https://github.com/git-suwalkaaditya/RoughTerrain-IVR2/blob/noetic/stereocamera_map.webm)
+ ![Download the simulation](https://github.com/git-suwalkaaditya/RoughTerrain-IVR2/blob/noetic/stereocamera_map.webm)
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+1. Setup the required bot by following the steps in the respective directory.
+2. Mount the required sensors on the bot.
+   eg -
+   
+```
+   export JACKAL_URDF_EXTRAS=$HOME/Desktop/realsense.urdf.xacro
+```
+3. Launch the required world file and the gmapping algorithm.
+   eg -
+    
+```
+   roslaunch cpr_inspection_gazebo inspection_world.launch 
+   roslaunch jackal_viz view_robot.launch
+   roslaunch jackal_navigation gmapping_demo.launch 
+```
+   
+4. Create and download the .pgm file of the map of the world.
+5. Open Matlab Scripts and establish the connection between the two systems to set up co-simulation.
+6. Run the .mlx files in order to view the results
 
 
 
@@ -143,15 +165,13 @@ Please refer to the detailed installation instructions provided in the the READM
 
 <!-- ROADMAP -->
 ## Roadmap
+- [x] Implemented and tested various global path planners like RRT, RRT*, A* and Hybrid A*.
+- [x] Added sensors to the bot and received data from ROS using matlab toolboxes.
+- [x] Created map using sensor data.
+- [x] Implemented AMCL using matlab scripting.
+- [x] WayPoint Navigation using Simulink Model.
+- [x] Visualisation of pointcloud2 data from Velodyne LiDAR.
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -170,16 +190,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
