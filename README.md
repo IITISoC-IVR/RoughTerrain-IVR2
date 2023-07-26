@@ -133,7 +133,7 @@ Please refer to the detailed installation instructions provided in the the READM
 
 <!-- USAGE EXAMPLES -->
 ## Demo and Usage:
- https://github.com/git-suwalkaaditya/RoughTerrain-IVR2/blob/noetic/stereocamera_map.webm
+ ![Runtime](https://github.com/git-suwalkaaditya/RoughTerrain-IVR2/blob/noetic/stereocamera_map.webm)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
