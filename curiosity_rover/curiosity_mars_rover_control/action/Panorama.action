@@ -1,0 +1,8 @@
+# (Unused) panorama type (horizontal, equirectangular etc)
+string type
+---
+# Whether the panorama action has been finished completely
+bool success
+---
+# Current panorama progress
+string state

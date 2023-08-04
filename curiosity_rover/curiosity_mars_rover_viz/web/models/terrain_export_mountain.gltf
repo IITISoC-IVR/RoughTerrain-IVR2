@@ -1,0 +1,150 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "M2E.001",
+            "translation" : [
+                184.64340209960938,
+                3928.959228515625,
+                -64.41458129882812
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "M2E.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "materials": [
+        {
+        "pbrMetallicRoughness": {
+            "baseColorTexture": {
+            "index": 0
+            },
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0
+        }
+        }
+    ],
+
+    "textures": [
+        {
+        "sampler": 0,
+        "source": 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "terrain_export_mountain",
+            "uri" : "terrain_export_mountain.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 24799,
+            "max" : [
+                -0.3861638009548187,
+                -3879.037109375,
+                265.0538024902344
+            ],
+            "min" : [
+                -303.9170227050781,
+                -3947.30712890625,
+                -28.005720138549805
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 24799,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 24799,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 145992,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 297588,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 297588,
+            "byteOffset" : 297588
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 198392,
+            "byteOffset" : 595176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 291984,
+            "byteOffset" : 793568
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1085552,
+            "uri" : "terrain_export_mountain.bin"
+        }
+    ]
+}

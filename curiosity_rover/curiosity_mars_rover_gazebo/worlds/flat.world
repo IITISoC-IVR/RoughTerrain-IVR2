@@ -1,0 +1,14 @@
+<sdf version="1.5">
+    <world name="default">
+        <gravity>0 0 -3.711</gravity>
+        <model name="world_flat" />
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+    </world>
+</sdf>

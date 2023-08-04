@@ -1,0 +1,24 @@
+<sdf version="1.5">
+    <world name="default">
+
+        <!-- Martian Gravity-->
+        <gravity>0 0 -3.711</gravity>
+        
+        <model name="world_mars_path" />
+        <include>
+            <uri>model://curiosity_path</uri>
+            <name>curiosity_path</name>
+            <pose>0 0 0 0 0 0</pose>
+        </include>
+
+        <scene>
+            <grid>false</grid>
+            <origin_visual>false</origin_visual>
+        </scene>
+        
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+    </world>
+</sdf>
